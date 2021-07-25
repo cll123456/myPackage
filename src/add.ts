@@ -6,7 +6,7 @@ import { delay } from "./utils";
  * @param {*} b 
  * @returns 
  */
-export const add = (a, b) => a + b;
+export const add = (a:number, b:number) => a + b;
 
 export class AsyncClass {
   /**
@@ -15,7 +15,7 @@ export class AsyncClass {
    * @param {*} b 
    * @returns 
    */
-  async asyncAdd(a, b) {
+  async asyncAdd(a:number, b:number) {
     await delay();
     return a + b;
   }
